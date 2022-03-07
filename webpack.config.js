@@ -71,7 +71,7 @@ pageRoutes.forEach(function (route) {
 module.exports = {
     entry: entry,
     devtool: process.env.NODE_ENV === 'production' ? 'none' : 'eval',
-    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+    mode: process.env.NODE_ENV === 'production' ,
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'js/[name].bundle.js',
